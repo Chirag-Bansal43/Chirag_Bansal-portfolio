@@ -34,7 +34,7 @@ export default function Projects() {
     },
     {
       title: "Project 4",
-      description: "A personal finance tracker for budgeting",
+      description: "ML PROJECT",
       image: "https://images.unsplash.com/photo-1556761175-4b46a572b786",
       tags: ["React", "Firebase", "Tailwind"],
       github: "https://github.com",

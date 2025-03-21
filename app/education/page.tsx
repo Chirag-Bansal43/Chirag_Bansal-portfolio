@@ -12,7 +12,7 @@ if (typeof window !== 'undefined') {
 }
 
 export default function Education() {
-  const educationRef = useRef(null);
+  const educationRef = useRef<HTMLDivElement>(null);
 
   const education = [
     {
@@ -54,7 +54,7 @@ export default function Education() {
         }
       });
 
-      const cards = educationRef.current.querySelectorAll('.timeline-card');
+      const cards = educationRef.current?.querySelectorAll('.timeline-card') || [];
       cards.forEach((card, index) => {
         gsap.from(card, {
           opacity: 0,
